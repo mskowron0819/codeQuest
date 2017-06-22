@@ -1,3 +1,5 @@
+const autoprefixer = require('autoprefixer');
+const webpack = require('webpack');
 module.exports = {
     entry: {
         main: ['./src/js/app.js', './src/scss/style.scss']
@@ -7,7 +9,7 @@ module.exports = {
     },
     watch: true,
     module: {
-        loaders: [
+        rules: [
             {
                 test: /\.js$/,
                 exclude: /node_modules/,
@@ -16,8 +18,8 @@ module.exports = {
             },
             {
                 test: /\.scss$/,
-                loaders: ['style-loader', 'css-loader', 'sass-loader']
-            }
+                loaders: ['style-loader', 'css-loader', 'sass-loader'],
+            },
         ]
     }
 };

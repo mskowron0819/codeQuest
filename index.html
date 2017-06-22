@@ -2,16 +2,28 @@
 <html lang="pl-PL">
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>CodersLab</title>
-    <script src="http://code.jquery.com/jquery-2.2.1.min.js"></script>
     <script src="dist/out.js"></script>
 </head>
 
 <body>
-<div class="stars"></div>
-<div class="twinkling"></div>
-    <button id="ascending">A-Z</button>
-    <button id="descending">Z-A</button>
-    <ul class="repertuar"></ul>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <section class="container">
+        <div id="app">
+            <div id="intro">
+                <div><img src="https://upload.wikimedia.org/wikipedia/commons/5/5a/Star_Wars_Logo..png" alt="Star Wars logo"></div>
+                <h1>We invite you to vote for Star Wars episodes!</h1>
+                <div id="sort-btns">
+
+                    <div id="ascending"><span></span></div>
+                    <p>Sort</p>
+                    <div id="descending"><span></span></div>
+                </div>
+            </div>
+            <ul class="movies"></ul>
+        </div>
+    </section>
 </body>
 </html>

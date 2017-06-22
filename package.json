@@ -27,5 +27,7 @@
   },
   "homepage": "https://github.com/mskowron0819/codeQuest#readme",
   "dependencies": {
+    "jquery": "^3.2.1",
+    "sort-by": "^1.2.0"
   }
 }
